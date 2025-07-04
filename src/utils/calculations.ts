@@ -2,7 +2,6 @@ import type {
   Config,
   MonthlyData,
   CalculationResult,
-  Guest,
   GuestSummary,
 } from "../types";
 

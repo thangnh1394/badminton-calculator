@@ -1,13 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  ArrowLeft,
-  ChevronLeft,
-  ChevronRight,
-  Calendar,
-  Info,
-  Edit2,
-  Trash2,
-} from "lucide-react";
+import React, { useState } from "react";
+import { ArrowLeft, Calendar, Edit2, Trash2 } from "lucide-react";
 import { useApp } from "../../contexts/AppContext";
 import type { Guest } from "../../types";
 import { formatCurrency } from "../../utils/calculations";
@@ -20,13 +12,10 @@ import {
   Subtitle,
   CalendarCard,
   CalendarHeader,
-  MonthNav,
-  MonthButton,
   MonthTitle,
   CalendarGrid,
   CalendarDayHeader,
   CalendarDay,
-  GuestCountBadge,
   EmptyDay,
   GuestForm,
   FormTitle,

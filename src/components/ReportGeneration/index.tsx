@@ -3,7 +3,6 @@ import {
   ArrowLeft,
   DollarSign,
   Users,
-  Calendar,
   Package,
   AlertCircle,
   CheckCircle,
@@ -61,13 +60,12 @@ const ReportGeneration: React.FC<ReportGenerationProps> = ({ onBack }) => {
     monthlyData,
     currentMonth,
     updateExtraShuttleCost,
-    updateActualPlayingDays,
     generateMonthlyReport,
   } = useApp();
   const [extraShuttle, setExtraShuttle] = useState(0);
-  const [playingDaysOverride, setPlayingDaysOverride] = useState<number | null>(
-    null
-  );
+  // const [playingDaysOverride, setPlayingDaysOverride] = useState<number | null>(
+  //   null
+  // );
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   // Parse current month
@@ -93,10 +91,10 @@ const ReportGeneration: React.FC<ReportGenerationProps> = ({ onBack }) => {
     updateExtraShuttleCost(extraShuttle);
   };
 
-  const handlePlayingDaysUpdate = (days: number) => {
-    updateActualPlayingDays(days);
-    setPlayingDaysOverride(days);
-  };
+  // const handlePlayingDaysUpdate = (days: number) => {
+  //   updateActualPlayingDays(days);
+  //   setPlayingDaysOverride(days);
+  // };
 
   const handleGenerateReport = () => {
     if (showConfirmation) {

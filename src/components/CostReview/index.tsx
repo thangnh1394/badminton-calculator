@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   ArrowLeft,
   DollarSign,
   Users,
   Calendar,
   Package,
-  Edit3,
   Info,
   FileText,
   Settings,
@@ -34,13 +33,11 @@ import {
   CostSection,
   SectionHeader,
   SectionTitle,
-  EditButton,
   DetailsList,
   DetailRow,
   DetailLabel,
   DetailValue,
   InfoBox,
-  ActionButtons,
   ActionButton,
   MembersList,
   MemberChip,

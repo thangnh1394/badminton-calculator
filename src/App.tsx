@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AppProvider } from "./contexts/AppContext";
 import Navigation from "./components/common/Navigation";
 import Dashboard from "./components/Dashboard";
