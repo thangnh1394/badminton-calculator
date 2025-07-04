@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Plus, FileText, DollarSign, CheckCircle } from "lucide-react";
 import { useApp } from "../../contexts/AppContext";
 import {
-  calculateMonthlyFee,
   calculateGuestSummary,
   formatCurrency,
 } from "../../utils/calculations";
@@ -50,7 +49,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   const [showWarningModal, setShowWarningModal] = useState(false);
 
   // Calculate current month data
-  const calculation = calculateMonthlyFee(config, monthlyData);
+  // const calculation = calculateMonthlyFee(config, monthlyData);
 
   // Calculate guest summary from running fees
   const guestSummary = calculateGuestSummary({
@@ -67,7 +66,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
   });
 
   // Count playing days by type
-  const playingDates = Object.keys(runningGuestFees).length;
+  // const playingDates = Object.keys(runningGuestFees).length;
   const tuesdayCount = config.schedule.daysOfWeek.includes("Tuesday")
     ? Math.floor(monthlyData.actualPlayingDays * 0.5)
     : 0;
